@@ -60,7 +60,7 @@ export default function App() {
       {/* Header Image Section */}
       <div className="h-80 w-full relative overflow-hidden no-print">
         <img 
-          src="https://media.licdn.com/dms/image/v2/D4E12AQEPP1y8X7xh9g/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1719600078412?e=2147483647&v=beta&t=YxE5tWQhAKu4Aqg1-kwRhKXShvFAxho6yvIUMxEogu4" 
+          src="/header.png" 
           alt="AI & Tech Header"
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"
@@ -175,7 +175,7 @@ export default function App() {
               className="relative aspect-square w-40 h-40 md:w-52 md:h-52 mx-auto rounded-full overflow-hidden bg-slate-100 border-8 border-white shadow-2xl"
             >
               <img 
-                src="https://lh3.googleusercontent.com/d/1TYCuTjxPD9GzyheJL_NjdDZaAxsOrWFe" 
+                src="/profile.jpg" 
                 alt={data.name}
                 className="w-full h-full object-cover"
                 onError={(e) => {
