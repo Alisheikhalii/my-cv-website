@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Vazirmatn:wght@300;400;500;700&family=Lalezar&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Vazirmatn", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Lalezar", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-[#fffcf5] text-[#2d2a26] selection:bg-amber-100 selection:text-amber-900;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  nav {
+    display: none !important;
+  }
+
+  body {
+    background-color: white !important;
+  }
+
+  .min-h-screen {
+    min-height: auto !important;
+  }
+
+  main {
+    margin-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  section {
+    break-inside: avoid;
+    margin-bottom: 2rem !important;
+  }
+
+  .shadow-2xl, .shadow-xl, .shadow-md, .shadow-sm {
+    box-shadow: none !important;
+  }
+
+  .border-white\/50 {
+    border-color: #e2e8f0 !important;
+  }
+
+  /* Ensure colors are printed */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+
+.rtl {
+  direction: rtl;
+  font-family: "Vazirmatn", "Inter", sans-serif;
+}
+
+.rtl h1, .rtl h2, .rtl h3 {
+  font-family: "Lalezar", "Vazirmatn", sans-serif;
+}
+
+.ltr {
+  direction: ltr;
+  font-family: "Inter", "Vazirmatn", sans-serif;
+}
